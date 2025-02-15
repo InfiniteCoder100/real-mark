@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+}
+.header a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+
+  margin-left: 20px;
+  white-space: nowrap;
+}
+.header a:hover {
+  color: red;
+}
+
+.header {
+  padding: 10px 0;
+}
+
+.search1 {
+  padding-left: 35%;
+}
+.serchbox1 {
+  width: 371.4px;
+  height: 29.6px;
+  border-radius: 13px;
+  border: 1px solid;
+}
+.nivia {
+  padding-left: 2%;
+  align-self: center;
+}
+
+.head {
+  display: flex;
+}
+
+.searchimage {
+  width: 13px;
+  height: 13px;
+}
+
+.searchicon {
+  margin-left: -30px;
+}
+
+.fafa {
+  background-color: white;
+  color: black;
+}
+
+.fafapad {
+  margin-left: 70px;
+}
+
+.fafafont {
+  font-size: 13px;
+  font-family: "Gotham", sans-serif;
+}
+
+.startbox {
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 38.9px;
+
+  padding-top: 16px;
+}
+
+.btn1 {
+  border: 0px;
+  background-color: #f6f6f6;
+  cursor: pointer;
+  font-family: "Gotham", sans-serif;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.arrival {
+  font-family: "Gotham", sans-serif, bold;
+}
+
+.arrival1 {
+  display: flex;
+  padding-left: 262px;
+  font-family: "Gotham", sans-serif;
+}
+
+.vayu1 {
+  text-align: center;
+  width: 275px;
+  height: 399px;
+  background-color: #f6f6f6;
+  font-size: 19px;
+  cursor: pointer;
+  transition: 0.02s;
+}
+
+.vayu1:hover {
+  transform: scale(1.1);
+}
+
+.vayu2 {
+  text-align: center;
+  width: 275px;
+  height: 421px;
+  background-color: #f6f6f6;
+  font-size: 19px;
+  margin-left: 19px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.vayu2:hover {
+  transform: scale(1.1);
+}
+
+.vayu3 {
+  text-align: center;
+  width: 554px;
+  height: 829px;
+  background-color: #f6f6f6;
+  font-size: 19px;
+  margin-left: 19px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.vayu3:hover {
+  transform: scale(1.1);
+}
+
+.vayu4 {
+  text-align: center;
+  width: 275px;
+  height: 399px;
+  background-color: #f6f6f6;
+  font-size: 19px;
+  margin-left: 262px;
+  margin-top: -400px;
+  font-family: "Gotham", sans-serif;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.vayu4:hover {
+  transform: scale(1.1);
+}
+
+.vayu5 {
+  text-align: center;
+  width: 275px;
+  height: 399px;
+  background-color: #f6f6f6;
+  margin-left: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.vayu5:hover {
+  transform: scale(1.1);
+}
+
+.start2 {
+  background-image: url(basketball-wallpaper-24.jpg);
+  width: 100%;
+  height: 1080px;
+  font-family: "Gotham", sans-serif, bold;
+  color: #f6f6f6;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.foot {
+  width: 350px;
+  height: 310px;
+  background-color: #292929;
+  transition: 0.2s;
+}
+.foot:hover {
+  transform: scale(1.1);
+}
+
+.offer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.ministart {
+  display: flex;
+  justify-content: center;
+}
+
+.sport {
+  width: 350px;
+  height: 638px;
+  background-color: #292929;
+  transition: 0.2s;
+  margin-left: 30px;
+}
+
+.sport:hover {
+  transform: scale(1.1);
+}
+.foot1 {
+  width: 350px;
+  height: 310px;
+  background-color: #292929;
+  margin-left: 30px;
+  transition: 0.2s;
+}
+.foot1:hover {
+  transform: scale(1.1);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.best {
+  font-family: "Gotham", sans-serif, bold;
+  width: 100%;
+  height: 1000px;
+  text-align: center;
+}
+
+.best1 {
+  font-family: "Gotham", sans-serif;
+}
+
+.offer1 {
+  font-size: 38px;
+}
+
+.power1 {
+  width: 280px;
+  height: 340px;
+  text-align: left;
+  transition: 0.2s;
+}
+.power1:hover {
+  transform: scale(1.1);
+}
+
+.home {
+  margin-left: 30px;
+}
+
+.oftext {
+  color: black;
+  font-family: "Gotham Book Regular";
+  line-height: 30px;
+}
+
+.explore {
+  width: 100%;
+  height: 750px;
+  background-color: #f6f6f6;
+  font-family: "Gotham Book Regular";
+  justify-content: center;
+  text-align: center;
+}
+
+/* .miniexplore {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+} */
+
+.explore1 {
+  width: 370px;
+  height: 519px;
+  background-color: white;
+  margin-right: 2%;
+}
+
+.eximg {
+  width: 370px;
+  height: 450px;
+}
+
+.oftext3 {
+  color: black;
+  font-family: "Gotham Book Regular";
+  font-size: 20px;
+}
+
+.blog {
+  width: 100%;
+  height: 870px;
+  background-color: white;
+  font-family: "Gotham Book Regular";
+  justify-content: center;
+  text-align: center;
+}
+
+.blog1 {
+  display: flex;
+  justify-content: center;
+}
+
+.miniblog {
+  width: 330px;
+  height: 455px;
+  margin-right: 50px;
+  background-color: #f6f6f6;
+  font-family: "Gotham Book Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+  line-height: 30px;
+}
+
+.miniimg {
+  width: 330px;
+  height: 240px;
+}
+
+.lastbtn {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  border: 1px solid;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.lastbtn:hover {
+  background-color: #8f8f8f;
+  color: #f6f6f6;
+}
+
+.miniblog2 {
+  width: 330px;
+  height: 500px;
+  margin-right: 50px;
+  background-color: #f6f6f6;
+  font-family: "Gotham Book Regular";
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+  line-height: 30px;
+}
+
+.final {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  color: white;
+  justify-content: center;
+}
+
+.final1 {
+  width: auto;
+  height: auto;
+  color: #8f8f8f;
+  font-family: "Gotham Book Regular";
+  margin-right: 50px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.final2 {
+  display: flex;
+  justify-content: center;
+}
+
+.finalfont {
+  font-size: 25px;
+}
+
+.end {
+  width: 100%;
+  height: 40px;
+  background-color: #000;
+  font-family: "Gotham Book Regular";
+  color: #8f8f8f;
+  text-align: center;
+  font-size: 19px;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.customer-title {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.rating {
+  color: #f16301;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.miniexplore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.owners-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.owner-card {
+  width: 300px;
+  animation: slideUpFade 1.5s ease-out;
+}
+
+.owner-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.owner-info {
+  text-align: center;
+  padding: 15px;
+  animation: slideUp 0.8s ease-out;
+}
+
+.owner-info h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.owner-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

@@ -622,3 +622,19 @@ a {
   color: red;
   font-size: 14px;
 }
+
+/* shop now */
+.shop-now {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.shop-image {
+  width: 600px;
+  height: 570px;
+  object-fit: cover;
+}

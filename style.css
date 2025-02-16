@@ -6,38 +6,38 @@
 
 .header {
   width: 100%;
-  height: 40px;
+  height: 50px;
   margin-top: 20px;
+  margin-bottom: 0px;
   display: flex;
   align-items: center;
   justify-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 .header a {
   text-decoration: none;
   color: inherit;
-  font-weight: bold;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 
-  margin-left: 20px;
   white-space: nowrap;
 }
 .header a:hover {
   color: red;
+}
+.header-right {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
 .header {
   padding: 10px 0;
 }
 
-.search1 {
-  padding-left: 35%;
-}
-.serchbox1 {
-  width: 371.4px;
-  height: 29.6px;
-  border-radius: 13px;
-  border: 1px solid;
-}
 .nivia {
   padding-left: 2%;
   align-self: center;
@@ -188,19 +188,16 @@ a {
   color: white;
 }
 
-.best {
+/* .best {
   font-family: "Gotham", sans-serif, bold;
   width: 100%;
   height: 1000px;
   text-align: center;
-}
-
-.best1 {
-  font-family: "Gotham", sans-serif;
-}
+} */
 
 .offer1 {
   font-size: 38px;
+  text-align: center;
 }
 
 .power1 {
@@ -221,6 +218,45 @@ a {
   color: black;
   font-family: "Gotham Book Regular";
   line-height: 30px;
+}
+
+.best-sellers .slider-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.best-sellers .slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.best-sellers .slide {
+  flex: 0 0 calc(100% / 3);
+  padding: 10px 10px;
+}
+
+.best-sellers .prev,
+.best-sellers .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  color: black;
+  padding: 10px;
+
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.best-sellers .prev {
+  margin-left: 15px;
+  left: 20px;
+}
+
+.best-sellers .next {
+  right: 15px;
 }
 
 /* .explore {
@@ -327,6 +363,7 @@ a {
   height: auto;
   color: #8f8f8f;
   font-family: "Gotham Book Regular";
+  margin-left: 100px;
   margin-right: 50px;
   text-align: left;
   font-size: 16px;
@@ -340,6 +377,7 @@ a {
 
 .finalfont {
   font-size: 25px;
+  margin-bottom: 2px;
 }
 
 .end {
@@ -352,6 +390,16 @@ a {
   font-size: 19px;
 }
 
+.testimonial-section {
+  width: 100%;
+  height: 450px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 .testimonial-card {
   background: #fff;
   border-radius: 10px;
@@ -361,6 +409,8 @@ a {
   width: 300px;
   margin: 15px;
   transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .testimonial-card:hover {
@@ -403,7 +453,13 @@ a {
   padding: 20px;
 }
 
+.owners {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 .owners-container {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -470,7 +526,7 @@ a {
 .about-title {
   text-align: center;
   color: #333;
-  font-family: "Gotham", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -487,6 +543,9 @@ a {
   flex: 1;
   padding: 30px;
   text-align: center;
+  color: #000;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -556,6 +615,7 @@ a {
 
 /* BS */
 .best-sellers {
+  margin-top: 100px;
   display: flex;
   align-items: center;
   padding: 20px;
@@ -599,14 +659,14 @@ a {
   background: white;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   text-align: center;
 }
 
 .product img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .price {
   font-size: 18px;
@@ -625,6 +685,7 @@ a {
 
 /* shop now */
 .shop-now {
+  margin-top: 100px;
   width: 100%;
   padding: 40px;
   display: flex;
@@ -634,7 +695,168 @@ a {
 }
 
 .shop-image {
-  width: 600px;
-  height: 570px;
+  width: 700px;
+  height: 600px;
   object-fit: cover;
+}
+
+@keyframes sparkle {
+  0% {
+    filter: brightness(100%) contrast(100%);
+    transform: scale(1);
+  }
+  50% {
+    filter: brightness(120%) contrast(110%);
+    transform: scale(1.05);
+  }
+  100% {
+    filter: brightness(100%) contrast(100%);
+    transform: scale(1);
+  }
+}
+
+.sparkle-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.sparkle-effect:hover {
+  animation: sparkle 0.8s ease-in-out;
+}
+
+.sparkle-effect:hover::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8) 0%,
+    transparent 60%
+  );
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* new arrivals */
+.new-arrivals {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+/* Left Section (Text) */
+.text-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* .text-section h2 {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+} */
+
+.highlight-new {
+  background-color: red;
+  color: black;
+  padding: 2px 8px;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+}
+
+.red-line {
+  width: 500px;
+  height: 3px;
+  background-color: red;
+}
+
+.text-arrival {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100px;
+}
+
+.explore-btn {
+  margin-top: 10px;
+
+  font-size: 16px;
+  border: 2px solid white;
+  background: white;
+  height: 30px;
+  width: 140px;
+
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Right Section (Slider) */
+.slider-section {
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: calc(33.333% - 14px);
+  height: 400px;
+  object-fit: cover;
+}
+.slider img {
+  width: 100%;
+  height: 400px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: white;
 }

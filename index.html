@@ -24,19 +24,19 @@
 
     <header class="header">
 
-        <a href="#" class="nivia" style="margin-left: 6px; margin-right: 550px;">
+        <a href="#" class="nivia" style="margin-left: 15px; margin-right: 400px;  margin-bottom: 20px;">
             <img src="images/logo.png" width="200" height="60">
         </a>
 
-        <div>
-            <a href="#">Home</a>
-            <a href="#about-section">About</a>
-            <a href="#arrival">Products</a>
-            <a href="#best">Best Seller</a>
-
-            <a href="#explore">Testimonials</a>
-            <a href="#owners">Team</a>
-            <a href="#final">Contact Us</a>
+        <div class="header-right">
+            <a href="#">HOME</a>
+            <a href="#about-section">ABOUT</a>
+            <a href="#product">PRODUCTS</a>
+            <a href="#best">BEST SELLERS</a>
+            <a href="#arrival">NEW ARRIVALS</a>
+            <a href="#explore">TESTIMONIALS</a>
+            <a href="#owners">TEAM</a>
+            <a href="#final">CONTACT US</a>
 
 
 
@@ -50,15 +50,7 @@
     </div>
 
 
-    <!-- <div>
-        <marquee behavior="alternate" direction="t" loop="1" scrollamount="5px">
-            <a href="#"> <img src="images/ASTRA.jpg" alt="" width="1687px">
-                <img src="images/Vayu Banner Website.jpg" alt="" width="1687px">
-                <img src="images/Basketball (1).jpg" alt="" width="1687px">
 
-            </a>
-        </marquee>
-    </div> -->
     <div>
         <video width="100%" height="auto" autoplay loop muted>
             <source
@@ -73,7 +65,7 @@
     <!-- Add this after the header section -->
     <div class="about-section" id="about-section">
         <h1 class="about-title">About Us</h1>
-        <center><img src="images/ariival.png" alt=""></center>
+        <!-- <center><img src="images/ariival.png" alt=""></center> -->
 
         <div class="about-container">
             <div class="about-history">
@@ -113,9 +105,9 @@
     <BR><br><br>
     <div>
         <center>
-            <h1 class="arrival" id="arrival">Our Products</h1>
+            <h1 class="arrival" id="product">Our Products</h1>
         </center>
-        <center><img src="images/ariival.png" alt=""></center>
+        <!-- <center><img src="images/ariival.png" alt=""></center> -->
 
         <div class="arrival-container">
             <div class="arrival-item">
@@ -137,7 +129,7 @@
         </div>
     </div>
 
-    <div class="start2">
+    <!-- <div class="start2">
 
         <br><br>
         <center>
@@ -179,7 +171,7 @@
             </div>
         </div>
     </div>
-
+ -->
 
 
 
@@ -190,25 +182,27 @@
             <p>Sports Gear, Footwear & Accessories</p>
             <p class="explore">EXPLORE ALL</p>
         </div>
-        <div class="products">
-            <div class="product">
-                <img src="/images/shoe2.webp" alt="Nivia Safari Football Studs">
-                <h3>Nivia Safari Football Studs</h3>
-                <p class="price">₹ 1,399 <span class="original-price">₹ 1,499</span> <span class="discount">7%
-                        Off</span></p>
+        <div class="slider-section">
+            <button class="prev" onclick="prevBestSeller()">&#10094;</button>
+            <div class="products slider">
+                <div class="product slide">
+                    <img src="/images/shoe2.webp" alt="Nivia Safari Football Studs">
+                    <h3>Nivia Safari Football Studs</h3>
+                </div>
+                <div class="product slide">
+                    <img src="/images/shoe1.webp" alt="Nivia Crick - 1000 2.0 Cricket Shoes">
+                    <h3>Nivia Crick - 1000 2.0 Cricket Shoes</h3>
+                </div>
+                <div class="product slide">
+                    <img src="images/shoe3.webp" alt="Nivia Dagger Football Studs">
+                    <h3>Nivia Dagger Football Studs</h3>
+                </div>
+                <div class="product slide">
+                    <img src="images/8.jpg" alt="Astra">
+                    <h3>Nivia Dagger Football Studs</h3>
+                </div>
             </div>
-            <div class="product">
-                <img src="/images/shoe3.webp" alt="Nivia Crick - 1000 2.0 Cricket Shoes">
-                <h3>Nivia Crick - 1000 2.0 Cricket Shoes</h3>
-                <p class="price">₹ 2,649 <span class="original-price">₹ 2,949</span> <span class="discount">10%
-                        Off</span></p>
-            </div>
-            <div class="product">
-                <img src="images/shoe3.webp" alt="Nivia Dagger Football Studs">
-                <h3>Nivia Dagger Football Studs</h3>
-                <p class="price">₹ 1,799 <span class="original-price">₹ 1,999</span> <span class="discount">10%
-                        Off</span></p>
-            </div>
+            <button class="next" onclick="nextBestSeller()">&#10095;</button>
         </div>
     </div>
 
@@ -219,16 +213,55 @@
     </div>
 
 
+
+
+    <!-- Shop Now -->
+    <div class="shop-now">
+        <img src="images/shop_now.webp" alt="Shop item 1" class="shop-image sparkle-effect">
+        <img src="images/shop.webp" alt="Shop item 2" class="shop-image sparkle-effect">
+
+    </div>
+
+
+
+
+
+    <!-- new arrivals -->
+    <div class="new-arrivals" id="arrival">
+        <!-- Left Section (Tilted Text) -->
+        <div class="text-section">
+
+            <h2><span class="highlight-new">NEW</span> <span class="red-line"></span></h2>
+            <div class="red-line"></div>
+            <h2 class="text-arrival">ARRIVALS</h2>
+            <button class="explore-btn">EXPLORE NOW</button>
+        </div>
+
+        <!-- Right Section (Image Slider) -->
+        <div class="slider-section">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="slider">
+                <img src="images/shoe1.webp" class="slide" alt="Shoe 1">
+                <img src="images/shoe2.webp" class="slide" alt="Shoe 2">
+                <img src="images/bat.webp" class="slide" alt="Shoe 3">
+                <img src="images/6.jpg" class="slide" alt="Shoe 3">
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+
     <div class="explore" id="explore">
         <br><br>
         <h1 class="offer1">Customer Testimonials</h1>
         <img src="images/ariival.png" alt="">
         <br><br>
 
-        <div class="miniexplore">
+        <div class="miniexplore testimonial-section">
             <div class="testimonial-card">
                 <img src="images/customer1.jpg" class="profile-img">
-                <h3>John Smith</h3>
+                <h3>Varun Sharma</h3>
                 <p class="customer-title">Professional Athlete</p>
                 <p class="review-text">"Real Mark Sports Shop has the best collection of Nivia products. Their customer
                     service is exceptional and the quality of products is outstanding."</p>
@@ -243,7 +276,7 @@
 
             <div class="testimonial-card">
                 <img src="images/customer2.jpg" class="profile-img">
-                <h3>Sarah Wilson</h3>
+                <h3>Sohail Khan</h3>
                 <p class="customer-title">Sports Coach</p>
                 <p class="review-text">"I've been buying equipment for my team from Real Mark for years. Their range of
                     Nivia products is unmatched and prices are competitive."</p>
@@ -258,9 +291,9 @@
 
             <div class="testimonial-card">
                 <img src="images/customer3.jpg" class="profile-img">
-                <h3>Mike Johnson</h3>
+                <h3>Arjun Goel</h3>
                 <p class="customer-title">Sports Enthusiast</p>
-                <p class="review-text">"The quality of Nivia products at Real Mark is fantastic. I particularly love
+                <p class="review-text">"The quality of sports products at Real Mark is fantastic. I particularly love
                     their football equipment collection and prompt delivery."</p>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -273,15 +306,7 @@
         </div>
     </div>
 
-    <!-- Shop Now -->
-    <div class="shop-now">
-        <img src="images/shop_now.webp" alt="Shop item 1" class="shop-image">
-        <img src="images/shop.webp" alt="Shop item 2" class="shop-image">
-
-    </div>
-
-
-
+    <!-- Owners -->
     <div class="owners" id="owners">
         <h1 class="offer ">Our Owners</h1>
         <img src="images/ariival.png" alt="">
@@ -291,7 +316,7 @@
                 <img src="images/owner1.jpg" class="owner-img">
                 <div class="owner-info">
                     <h2>Vinod Bhatia</h2>
-                    <p>Owner</p>
+
                 </div>
             </div>
 
@@ -299,7 +324,7 @@
                 <img src="images/owner2.jpg" class="owner-img">
                 <div class="owner-info">
                     <h2>Mohit Bhatia</h2>
-                    <p>Owner</p>
+
                 </div>
             </div>
         </div>
@@ -319,8 +344,10 @@
                 Email: Support@nivia.in
                 <br>
                 <br><br>
+
                 <span class="finalfont">
-                    SOCIAL:
+                    <h4>SOCIALS</h4>
+
                     <a href="https://www.facebook.com/niviasports" target="_blank">
                         <img src="images/facebook.png">
                     </a>
@@ -354,22 +381,7 @@
 
             </div>
 
-            <div class="final1"><br><br><br>
-                <span class="finalfont">
-                    NIVIA AFFILIATIONS
-                </span><br>
-                <a href="#">
-                    <span style="color: #8F8F8F;">
-                        AIFF<br>
-                        ISL<br>
-                        Bhutan Football Federation<br>
-                        Srilankan Football Federation<br>
-                        BFI<br>
-                        VFI
-                    </span>
-                </a>
 
-            </div>
 
         </div>
 
@@ -378,6 +390,11 @@
     <footer class="end">
         © 2024 All rights reserved
     </footer>
+
+    <script src="index.js" defer></script>
+
+
+
 </body>
 
 </html>

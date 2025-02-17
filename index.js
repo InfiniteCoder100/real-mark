@@ -57,3 +57,13 @@ function updateBestSellerSlider() {
 // Initialize both sliders
 updateNewArrivalsSlider();
 updateBestSellerSlider();
+
+// menu-icon
+
+const menuBtn = document.querySelector(".mobile-menu-btn");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+});
